@@ -1,0 +1,327 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    font-size: 0.9rem; /* Reduced overall font size */
+}
+
+/* Header styling */
+header {
+    background-color: #004680;
+    color: #fff;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 0.8rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Center alignment */
+.center-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav ul li a:hover {
+    color: #ffce00;
+}
+
+/* Section styling */
+section {
+    margin: 2.5rem 0;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #004680;
+    border-bottom: 2px solid #ffce00;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    font-size: 1.5rem; /* Adjusted for consistency */
+}
+
+/* Project and experience items */
+.project, .experience-item {
+    background: #f4f4f4;
+    padding: 1.2rem;
+    margin: 0.8rem 0;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover, .experience-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Education Item Styling */
+.education-item {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.education-item .icon {
+    width: 75px;
+    height: 75px;
+    margin-right: 15px;
+}
+
+.date {
+    font-size: 0.85rem;
+    color: #777;
+    margin-left: 10px;
+}
+
+/* Experience Item Styling */
+.experience-item {
+    display: flex;
+    align-items: center;
+    background: #f4f4f4;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experience-item .icon {
+    width: 75px;
+    height: 75px;
+    margin-right: 20px;
+}
+
+.experience-item strong {
+    font-size: 1.2rem;
+}
+
+.experience-item span {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.experience-item .date {
+    font-size: 0.95rem;
+    color: #777;
+    margin-left: 15px;
+}
+
+.education-item span {
+    font-size: 0.85rem;
+    color: #555;
+    display: block;
+    margin-top: 0.3rem;
+}
+
+.education-item div {
+    font-size: 0.9rem;
+}
+
+strong {
+    color: #004680;
+}
+
+/* Contact section styling */
+#contact p {
+    margin: 0.7rem 0;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* Media Container Styling */
+.media-container .image-group {
+    max-width: 85%; /* Ensures images fit within the container's width */
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+/* Media Container Styling */
+.media-container2 .image-group2 {
+    max-width: 80%; /* Ensures images fit within the container's width */
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.video-aspect-ratio .media-video {
+    width: 100%;
+    height: 300px; /* Adjusted height for aspect ratio */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Make the video in the Research Assistant section fit within the page */
+.video-crop-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Cropped Video */
+.media-video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 50% 20%;
+    border-radius: 8px;
+}
+
+ul li ul {
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+    list-style-type: disc;
+}
+
+ul li ul li {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+img.image-group {
+    max-width: 100%; /* This will limit image width within content boundaries */
+    height: auto;
+}
+
+.scaled-container {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    overflow: hidden; /* Ensures no overflow outside boundaries */
+    width: 100%; /* Matches content boundaries */
+}
+
+.scale06 {
+    transform: scale(0.6); /* Scales the image to 60% */
+    transform-origin: center; /* Keeps the scaling centered */
+}
+
+.scale07 {
+    transform: scale(0.7); /* Scales the image to 60% */
+    transform-origin: center; /* Keeps the scaling centered */
+}
+
+.scale08 {
+    transform: scale(0.8); /* Scales the image to 60% */
+    transform-origin: center; /* Keeps the scaling centered */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.contact-info .icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.main-title {
+    text-align: left;
+    flex: 1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    margin: 0 0.8rem;
+}
+
+/* Badge and skill container styling */
+.badge-skill-container {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.badge {
+    width: 50px; /* Adjust badge size */
+    height: 50px;
+    margin-right: 15px; /* Space between badge and skill description */
+}
+
+.skills {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.skills p {
+    margin: 0; /* Remove extra spacing */
+}
